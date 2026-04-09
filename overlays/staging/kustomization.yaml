@@ -7,7 +7,10 @@ resources:
 - ../../base
 - frontend.yaml
 - infrastructure.yaml
-  
+
+generators:
+- secret-generator.yaml
+
 patches:
 - patch: |-
     - op: add
