@@ -17,7 +17,7 @@ spec:
         app: booking
     spec:
       containers:
-        - image: ghcr.io/quash123/bm-booking:1.0.0
+        - image: ghcr.io/quash123/course-bm-booking:1.0.0
           name: booking
           ports:
             - containerPort: 8080

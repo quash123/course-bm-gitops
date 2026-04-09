@@ -19,7 +19,7 @@ spec:
       imagePullSecrets:
         - name: github
       containers:
-        - image: ghcr.io/quash123/bm-passenger:1.0.0
+        - image: ghcr.io/quash123/course-bm-passenger:1.0.0
           name: passenger
           ports:
             - containerPort: 8080
