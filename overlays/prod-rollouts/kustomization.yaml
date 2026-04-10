@@ -24,3 +24,7 @@ patches:
   target:
     kind: Rollout
     labelSelector: app.kubernetes.io/part-of=booking-microservices
+
+images:
+- name: k8smaestro/argo-rollouts-demo
+  newTag: green
