@@ -6,8 +6,13 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /$1
     # This enables HTTP connections from Internet clients
     kubernetes.io/ingress.allow-http: "true"
+    cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
   ingressClassName: nginx
+  tls:
+    - hosts:
+        - gradoc.dev
+      secretName: gradoc-tls
   rules:
     - host: gradoc.dev # rememeber to change it to yours
       http:
