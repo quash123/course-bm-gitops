@@ -27,4 +27,4 @@ patches:
 
 images:
 - name: k8smaestro/argo-rollouts-demo
-  newTag: green
+  newTag: blue
